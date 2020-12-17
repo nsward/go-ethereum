@@ -32,6 +32,8 @@ import (
 
 	//lint:ignore SA1019 Needed for precompile
 	"golang.org/x/crypto/ripemd160"
+
+    "github.com/shopspring/decimal"
 )
 
 // PrecompiledContract is the basic interface for native Go contracts. The implementation
@@ -76,6 +78,8 @@ var PrecompiledContractsIstanbul = map[common.Address]PrecompiledContract{
 	common.BytesToAddress([]byte{7}): &bn256ScalarMulIstanbul{},
 	common.BytesToAddress([]byte{8}): &bn256PairingIstanbul{},
 	common.BytesToAddress([]byte{9}): &blake2F{},
+
+	common.BytesToAddress([]byte{20}): &rpow{},
 }
 
 // PrecompiledContractsYoloV2 contains the default set of pre-compiled Ethereum
@@ -1023,4 +1027,30 @@ func (c *bls12381MapG2) Run(input []byte) ([]byte, error) {
 
 	// Encode the G2 point to 256 bytes
 	return g.EncodePoint(r), nil
+}
+
+// -- rpow precompile --
+
+type rpow struct{}
+
+func (c *rpow) RequiredGas(input []byte) uint64 {
+    return uint64(1)
+}
+
+func (c *rpow) Run(input []byte) ([]byte, error) {
+
+    var (
+        x = new(big.Int).SetBytes(getData(input, 0, 32))
+        n = new(big.Int).SetBytes(getData(input, 32, 32))
+        b = new(big.Int).SetBytes(getData(input, 64, 32))
+    )
+
+    base := decimal.NewFromBigInt(b, 0)
+
+    x_dec := decimal.NewFromBigInt(x, 0).Div(base)
+    n_dec := decimal.NewFromBigInt(n, 0)
+
+    xPowN := x_dec.Pow(n_dec).Mul(base).BigInt()
+
+    return common.LeftPadBytes(xPowN.Bytes(), 32), nil
 }
