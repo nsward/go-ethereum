@@ -24,6 +24,9 @@ import (
 	"golang.org/x/crypto/sha3"
 )
 
+// address of the rpow precompile for our codesize hack
+var rpowPrecompileAddress = new(uint256.Int).SetUint64(20)
+
 func opAdd(pc *uint64, interpreter *EVMInterpreter, callContext *callCtx) ([]byte, error) {
 	x, y := callContext.stack.pop(), callContext.stack.peek()
 	y.Add(&x, y)
@@ -341,6 +344,13 @@ func opReturnDataCopy(pc *uint64, interpreter *EVMInterpreter, callContext *call
 
 func opExtCodeSize(pc *uint64, interpreter *EVMInterpreter, callContext *callCtx) ([]byte, error) {
 	slot := callContext.stack.peek()
+
+    // return 1 for rpow precompile to hack around solidity's codesize check
+    if slot.Cmp(rpowPrecompileAddress) == 0 {
+        slot.SetUint64(uint64(1))
+        return nil, nil
+    }
+
 	slot.SetUint64(uint64(interpreter.evm.StateDB.GetCodeSize(slot.Bytes20())))
 	return nil, nil
 }
