@@ -33,7 +33,7 @@ import (
 	//lint:ignore SA1019 Needed for precompile
 	"golang.org/x/crypto/ripemd160"
 
-    "github.com/shopspring/decimal"
+	"github.com/shopspring/decimal"
 )
 
 // PrecompiledContract is the basic interface for native Go contracts. The implementation
@@ -78,7 +78,6 @@ var PrecompiledContractsIstanbul = map[common.Address]PrecompiledContract{
 	common.BytesToAddress([]byte{7}): &bn256ScalarMulIstanbul{},
 	common.BytesToAddress([]byte{8}): &bn256PairingIstanbul{},
 	common.BytesToAddress([]byte{9}): &blake2F{},
-
 	common.BytesToAddress([]byte{20}): &rpow{},
 }
 
@@ -1031,22 +1030,39 @@ func (c *bls12381MapG2) Run(input []byte) ([]byte, error) {
 
 // -- rpow precompile --
 
+var (
+    rpowFunctionSignature = big.NewInt(1740140719) // 0x67b870af, rpow(uint256 x, uint256 n, uint256 b)
+    errRpowInvalidInputLength = errors.New("invalid input")
+    errRpowInvalidInputPrefix = errors.New("invalid prefix / function signature")
+)
+
 type rpow struct{}
 
 func (c *rpow) RequiredGas(input []byte) uint64 {
     return uint64(1)
 }
 
+// rpow(uint256 x, uint256 n, uint256 b)
 func (c *rpow) Run(input []byte) ([]byte, error) {
 
+    // need 4 byte function sig + 32 byte x, n, b
+    if len(input) < 100 {
+        return nil, errRpowInvalidInputLength
+    }
+
     var (
-        x = new(big.Int).SetBytes(getData(input, 0, 32))
-        n = new(big.Int).SetBytes(getData(input, 32, 32))
-        b = new(big.Int).SetBytes(getData(input, 64, 32))
+        prefix = new(big.Int).SetBytes(getData(input, 0, 4))
+        x = new(big.Int).SetBytes(getData(input, 4, 32))
+        n = new(big.Int).SetBytes(getData(input, 36, 32))
+        b = new(big.Int).SetBytes(getData(input, 68, 32))
     )
 
-    base := decimal.NewFromBigInt(b, 0)
+    // input[:4] must match bytes4(keccak(rpow(uint256,uint256,uint256)))
+    if prefix.Cmp(rpowFunctionSignature) != 0 {
+        return nil, errRpowInvalidInputPrefix
+    }
 
+    base := decimal.NewFromBigInt(b, 0)
     x_dec := decimal.NewFromBigInt(x, 0).Div(base)
     n_dec := decimal.NewFromBigInt(n, 0)
 
