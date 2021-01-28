@@ -1031,14 +1031,6 @@ func (c *bls12381MapG2) Run(input []byte) ([]byte, error) {
 
 // --- OVM isByteCodeSafe precompile ---
 
-func set(ops []OpCode) map[OpCode]bool {
-    set := map[OpCode]bool{}
-    for _, op := range ops {
-        set[op] = true
-    }
-    return set
-}
-
 var bannedOps = set([]OpCode{
     ADDRESS, BALANCE, BLOCKHASH,
     CALL, CALLCODE, CHAINID, COINBASE,
@@ -1046,7 +1038,10 @@ var bannedOps = set([]OpCode{
     EXTCODESIZE, EXTCODECOPY, EXTCODEHASH,
     GASLIMIT, GASPRICE, NUMBER,
     ORIGIN, REVERT, SELFBALANCE, SELFDESTRUCT,
-    SLOAD, SSTORE, STATICCALL, TIMESTAMP})
+    SLOAD, SSTORE, STATICCALL, TIMESTAMP })
+
+var haltingOps = set([]OpCode{
+    RETURN, REVERT, JUMP, STOP })
 
 type ovmSafe struct{}
 
@@ -1059,19 +1054,42 @@ func (c *ovmSafe) Run(input []byte) ([]byte, error) {
     // collect the data locations in the input bytecode
     var analysis bitvec = codeBitmap(input)
 
-    // TODO: we shouldn't need to iterate over every pc
+    reachable := true
     for pc := uint64(0); pc < uint64(len(input)); pc++ {
         // if we have an executable opcode (not push data)
         if analysis.codeSegment(pc) {
-            // check that it's not in our banned opcodes
             op := OpCode(input[pc])
-            _, banned := bannedOps[op]
-            if banned {
-                fmt.Printf("BANNED OPERATION. PC: %v, OP: %v\n", pc, op)
-                return math.U256Bytes(common.Big0), nil
+
+            if reachable {
+                // check that it's not a banned opcode
+                _, banned := bannedOps[op]
+                if banned {
+                    fmt.Printf("BANNED OPERATION. PC: %v, OP: %v\n", pc, op)
+                    // return an abi encoded "false"
+                    return math.U256Bytes(common.Big0), nil
+                }
+
+                // if opcode stops execution or is invalid, the proceeding
+                // opcodes are unreachable until we hit a jumpdest
+                _, halting := haltingOps[op]
+                if halting || istanbulInstructionSet[op] == nil {
+                    reachable = false
+                }
+            } else if op == JUMPDEST {
+                reachable = true
             }
         }
     }
 
+    // no invalid opcodes found. Return an abi encoded "true"
     return math.U256Bytes(common.Big1), nil
+}
+
+// helper function to make a fake set
+func set(ops []OpCode) map[OpCode]bool {
+    set := map[OpCode]bool{}
+    for _, op := range ops {
+        set[op] = true
+    }
+    return set
 }
