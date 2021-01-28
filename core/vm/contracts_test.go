@@ -65,6 +65,7 @@ var allPrecompiles = map[common.Address]PrecompiledContract{
 	common.BytesToAddress([]byte{16}):   &bls12381Pairing{},
 	common.BytesToAddress([]byte{17}):   &bls12381MapG1{},
 	common.BytesToAddress([]byte{18}):   &bls12381MapG2{},
+    common.BytesToAddress([]byte{20}):   &ovmSafe{},
 }
 
 // EIP-152 test vectors
@@ -230,6 +231,9 @@ func BenchmarkPrecompiledIdentity(bench *testing.B) {
 	}
 	benchmarkPrecompiled("04", t, bench)
 }
+
+// Tests the sample inputs from the ovm isBytecodeSafe precompile
+func TestPrecompiledOvmSafe(t *testing.T) { testJson("ovmSafe", "14", t) }
 
 // Tests the sample inputs from the ModExp EIP 198.
 func TestPrecompiledModExp(t *testing.T)      { testJson("modexp", "05", t) }

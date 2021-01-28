@@ -32,8 +32,6 @@ import (
 
 	//lint:ignore SA1019 Needed for precompile
 	"golang.org/x/crypto/ripemd160"
-
-    "fmt"
 )
 
 // PrecompiledContract is the basic interface for native Go contracts. The implementation
@@ -78,7 +76,6 @@ var PrecompiledContractsIstanbul = map[common.Address]PrecompiledContract{
 	common.BytesToAddress([]byte{7}): &bn256ScalarMulIstanbul{},
 	common.BytesToAddress([]byte{8}): &bn256PairingIstanbul{},
 	common.BytesToAddress([]byte{9}): &blake2F{},
-
     common.BytesToAddress([]byte{20}): &ovmSafe{},
 }
 
@@ -1064,7 +1061,7 @@ func (c *ovmSafe) Run(input []byte) ([]byte, error) {
                 // check that it's not a banned opcode
                 _, banned := bannedOps[op]
                 if banned {
-                    fmt.Printf("BANNED OPERATION. PC: %v, OP: %v\n", pc, op)
+                    // fmt.Printf("BANNED OPERATION. PC: %v, OP: %v\n", pc, op)
                     // return an abi encoded "false"
                     return math.U256Bytes(common.Big0), nil
                 }

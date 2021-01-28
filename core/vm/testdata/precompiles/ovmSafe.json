@@ -1,0 +1,1941 @@
+[
+    {
+        "Input": "30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: ADDRESS",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "31",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: BALANCE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "40",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: BLOCKHASH",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "f1",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: CALL",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "f2",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: CALLCODE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "46",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: CHAINID",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "41",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: COINBASE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "f0",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: CREATE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "f5",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: CREATE2",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "f4",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: DELEGATECALL",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "44",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: DIFFICULTY",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "3b",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: EXTCODESIZE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "3c",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: EXTCODECOPY",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "3f",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: EXTCODEHASH",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "45",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: GASLIMIT",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "3a",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: GASPRICE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "43",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: NUMBER",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "32",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: ORIGIN",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "fd",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: REVERT",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "47",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: SELFBALANCE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "ff",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: SELFDESTRUCT",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "54",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: SLOAD",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "55",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: SSTORE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "fa",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: STATICCALL",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "42",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "single opcode blacklisted: TIMESTAMP",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "01",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: ADD",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "02",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: MUL",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "03",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SUB",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "04",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DIV",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "05",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SDIV",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "06",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: MOD",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "07",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SMOD",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "08",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: ADDMOD",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "09",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: MULMOD",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0a",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: EXP",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0b",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SIGNEXTEND",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "10",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: LT",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "11",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: GT",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "12",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SLT",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "13",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SGT",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "14",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: EQ",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "15",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: ISZERO",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "16",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: AND",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "17",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: OR",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "18",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: XOR",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "19",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: NOT",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "1a",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: BYTE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "1b",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SHL",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "1c",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SHR",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "1d",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SAR",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "20",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SHA3",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "34",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: CALLVALUE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "35",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: CALLDATALOAD",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "36",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: CALLDATASIZE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "37",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: CALLDATACOPY",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "38",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: CODESIZE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "39",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: CODECOPY",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "3d",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: RETURNDATASIZE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "3e",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: RETURNDATACOPY",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "50",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: POP",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "51",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: MLOAD",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "52",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: MSTORE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "53",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: MSTORE8",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "57",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: JUMPI",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "58",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: PC",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "59",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: MSIZE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "5a",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: GAS",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "5b",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: JUMPDEST",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "80",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP1",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "81",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP2",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "82",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP3",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "83",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP4",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "84",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP5",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "85",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP6",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "86",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP7",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "87",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP8",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "88",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP9",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "89",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP10",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "8a",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP11",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "8b",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP12",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "8c",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP13",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "8d",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP14",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "8e",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP15",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "8f",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: DUP16",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "90",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP1",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "91",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP2",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "92",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP3",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "93",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP4",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "94",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP5",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "95",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP6",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "96",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP7",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "97",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP8",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "98",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP9",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "99",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP10",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "9a",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP11",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "9b",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP12",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "9c",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP13",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "9d",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP14",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "9e",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP15",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "9f",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: SWAP16",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "a0",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: LOG0",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "a1",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: LOG1",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "a2",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: LOG2",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "a3",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: LOG3",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "a4",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "single opcode whitelisted: LOG4",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH1",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "613030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH2",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "62303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH3",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6330303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH4",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "643030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH5",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "65303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH6",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6630303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH7",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "673030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH8",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "68303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH9",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6930303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH10",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6a3030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH11",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6b303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH12",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6c30303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH13",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6d3030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH14",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6e303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH15",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6f30303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH16",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "703030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH17",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "71303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH18",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7230303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH19",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "733030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH20",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "74303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH21",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7530303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH22",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "763030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH23",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "77303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH24",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7830303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH25",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "793030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH26",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7a303030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH27",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7b30303030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH28",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7c3030303030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH29",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7d303030303030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH30",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7e30303030303030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH31",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7f3030303030303030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH opcode whitelisted end: PUSH32",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "603030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH1",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "61303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH2",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6230303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH3",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "633030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH4",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "64303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH5",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6530303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH6",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "663030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH7",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "67303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH8",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6830303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH9",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "693030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH10",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6a303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH11",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6b30303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH12",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6c3030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH13",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6d303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH14",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6e30303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH15",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "6f3030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH16",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "70303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH17",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7130303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH18",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "723030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH19",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "73303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH20",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7430303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH21",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "753030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH22",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "76303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH23",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7730303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH24",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "783030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH25",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "79303030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH26",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7a30303030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH27",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7b3030303030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH28",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7c303030303030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH29",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7d30303030303030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH30",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7e3030303030303030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH31",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "7f303030303030303030303030303030303030303030303030303030303030303030",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH opcode blacklisted end: PUSH32",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "multiple opcodes whitelisted",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a430",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: ADDRESS",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a431",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: BALANCE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a440",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: BLOCKHASH",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4f1",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: CALL",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4f2",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: CALLCODE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a446",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: CHAINID",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a441",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: COINBASE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4f0",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: CREATE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4f5",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: CREATE2",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4f4",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: DELEGATECALL",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a444",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: DIFFICULTY",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a43b",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: EXTCODESIZE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a43c",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: EXTCODECOPY",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a43f",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: EXTCODEHASH",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a445",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: GASLIMIT",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a43a",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: GASPRICE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a443",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: NUMBER",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a432",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: ORIGIN",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4fd",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: REVERT",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a447",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: SELFBALANCE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4ff",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: SELFDESTRUCT",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a454",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: SLOAD",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a455",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: SSTORE",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4fa",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: STATICCALL",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b60306130306230303063303030306430303030306530303030303066303030303030306730303030303030306830303030303030303069303030303030303030306a30303030303030303030306b3030303030303030303030306c303030303030303030303030306d30303030303030303030303030306e3030303030303030303030303030306f303030303030303030303030303030307030303030303030303030303030303030307130303030303030303030303030303030303072303030303030303030303030303030303030307330303030303030303030303030303030303030307430303030303030303030303030303030303030303075303030303030303030303030303030303030303030307630303030303030303030303030303030303030303030307730303030303030303030303030303030303030303030303078303030303030303030303030303030303030303030303030307930303030303030303030303030303030303030303030303030307a3030303030303030303030303030303030303030303030303030307b303030303030303030303030303030303030303030303030303030307c30303030303030303030303030303030303030303030303030303030307d3030303030303030303030303030303030303030303030303030303030307e303030303030303030303030303030303030303030303030303030303030307f3030303030303030303030303030303030303030303030303030303030303030808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a442",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "multiple opcodes blacklisted end: TIMESTAMP",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "fe303140f1f24641f0f5f4443b3c3f453a433247ff5455fa42",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "blacklisted in unreachable code",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00605b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH1 then 1 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00615b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH2 then 2 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00625b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH3 then 3 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00635b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH4 then 4 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00645b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH5 then 5 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00655b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH6 then 6 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00665b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH7 then 7 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00675b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH8 then 8 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00685b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH9 then 9 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00695b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH10 then 10 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006a5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH11 then 11 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH12 then 12 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006c5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH13 then 13 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006d5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH14 then 14 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006e5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH15 then 15 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006f5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH16 then 16 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00705b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH17 then 17 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00715b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH18 then 18 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00725b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH19 then 19 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00735b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH20 then 20 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00745b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH21 then 21 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00755b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH22 then 22 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00765b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH23 then 23 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00775b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH24 then 24 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00785b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH25 then 25 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00795b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH26 then 26 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007a5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH27 then 27 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH28 then 28 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007c5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH29 then 29 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007d5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH30 then 30 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007e5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH31 then 31 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007f5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "PUSH32 then 32 JUMPDESTs unreachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0060305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH1 then 1 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006130305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH2 then 2 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00623030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH3 then 3 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0063303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH4 then 4 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006430303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH5 then 5 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00653030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH6 then 6 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0066303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH7 then 7 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006730303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH8 then 8 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00683030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH9 then 9 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0069303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH10 then 10 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006a30303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH11 then 11 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006b3030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH12 then 12 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006c303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH13 then 13 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006d30303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH14 then 14 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006e3030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH15 then 15 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "006f303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH16 then 16 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH17 then 17 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00713030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH18 then 18 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0072303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH19 then 19 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007330303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH20 then 20 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00743030303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH21 then 21 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0075303030303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH22 then 22 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007630303030303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH23 then 23 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "00773030303030303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH24 then 24 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "0078303030303030303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH25 then 25 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007930303030303030303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH26 then 26 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007a3030303030303030303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH27 then 27 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007b303030303030303030303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH28 then 28 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007c30303030303030303030303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH29 then 29 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007d3030303030303030303030303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH30 then 30 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007e303030303030303030303030303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH31 then 31 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "007f30303030303030303030303030303030303030303030303030303030303030305b30",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "PUSH32 then 32 bytes then JUMPDEST reachable",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "565b303140f1f24641f0f5f4443b3c3f453a433247ff5455fa42",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "blacklisted after reachable JUMPDEST",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "57303140f1f24641f0f5f4443b3c3f453a433247ff5455fa42",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "blacklisted after JUMPI",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "565b00303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a400303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a400303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "valid alternating reachable/unreachable with STOP",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "565bf3303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4f3303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4f3303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "valid alternating reachable/unreachable with RETURN",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "565bfe303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4fe303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4fe303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "valid alternating reachable/unreachable with INVALID",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "575b00303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a400303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a400303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a430",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "invalid alternating reachable/unreachable with STOP",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "575bf3303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4f3303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4f3303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a430",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "invalid alternating reachable/unreachable with RETURN",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "575bfe303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4fe303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4fe303140f1f24641f0f5f4443b3c3f453a433247ff5455fa425b0102030405060708090a0b101112131415161718191a1b1c1d203435363738393d3e505152535758595a5b606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a430",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "invalid alternating reachable/unreachable with INVALID",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "336000905af158600e01573d6000803e3d6000fd5b3d6001141558600a015760016000f35b",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "valid EM call",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "3350600060045af1",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "valid identity precompile call",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "336000905af158600e01573d6000803e3d6000fd5b3d6001141558600a015760016000f35b3350600060045af1",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000001",
+        "Name": "valid EM call, then valid identity precompile call",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "336000905af158600e01573d6000803e3d6000fd5b3d6001141558600a015760016000f35b3350600060035af1",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "valid EM call, then invalid identity precompile call",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "336000905af158600e01573d6000803e3d6000fd5b3d6001141558600a015760016000f35b54",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "valid EM call, then invalid opcode (SLOAD)",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "3350600060045af154",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "valid identity precompile call, then invalid opcode (SLOAD)",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "336000905af158601d01573d60011458600c01573d6000803e3d6000FD5b60016000f3",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "invalid EM call (missing final byte)",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "3350600060045a",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "invalid identity precompile call (missing final byte)",
+        "Gas": 1,
+        "NoBenchmark": false
+    },
+    {
+        "Input": "613350600060045af1",
+        "Expected": "0000000000000000000000000000000000000000000000000000000000000000",
+        "Name": "invalid identity precompile call (First 2 bytes are PUSH2ed)",
+        "Gas": 1,
+        "NoBenchmark": false
+    }
+]

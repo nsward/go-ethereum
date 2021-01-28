@@ -15,6 +15,9 @@ GORUN = env GO111MODULE=on go run
 evm:
 	$(GORUN) build/ci.go install ./cmd/evm
 
+test-ovm:
+	$(GORUN) build/ci.go test ./core/vm
+
 geth:
 	$(GORUN) build/ci.go install ./cmd/geth
 	@echo "Done building."
