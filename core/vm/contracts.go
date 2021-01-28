@@ -32,6 +32,8 @@ import (
 
 	//lint:ignore SA1019 Needed for precompile
 	"golang.org/x/crypto/ripemd160"
+
+    "fmt"
 )
 
 // PrecompiledContract is the basic interface for native Go contracts. The implementation
@@ -76,6 +78,8 @@ var PrecompiledContractsIstanbul = map[common.Address]PrecompiledContract{
 	common.BytesToAddress([]byte{7}): &bn256ScalarMulIstanbul{},
 	common.BytesToAddress([]byte{8}): &bn256PairingIstanbul{},
 	common.BytesToAddress([]byte{9}): &blake2F{},
+
+    common.BytesToAddress([]byte{20}): &ovmSafe{},
 }
 
 // PrecompiledContractsYoloV2 contains the default set of pre-compiled Ethereum
@@ -1023,4 +1027,51 @@ func (c *bls12381MapG2) Run(input []byte) ([]byte, error) {
 
 	// Encode the G2 point to 256 bytes
 	return g.EncodePoint(r), nil
+}
+
+// --- OVM isByteCodeSafe precompile ---
+
+func set(ops []OpCode) map[OpCode]bool {
+    set := map[OpCode]bool{}
+    for _, op := range ops {
+        set[op] = true
+    }
+    return set
+}
+
+var bannedOps = set([]OpCode{
+    ADDRESS, BALANCE, BLOCKHASH,
+    CALL, CALLCODE, CHAINID, COINBASE,
+    CREATE, CREATE2, DELEGATECALL, DIFFICULTY,
+    EXTCODESIZE, EXTCODECOPY, EXTCODEHASH,
+    GASLIMIT, GASPRICE, NUMBER,
+    ORIGIN, REVERT, SELFBALANCE, SELFDESTRUCT,
+    SLOAD, SSTORE, STATICCALL, TIMESTAMP})
+
+type ovmSafe struct{}
+
+func (c *ovmSafe) RequiredGas(input []byte) uint64 {
+	return uint64(1)
+}
+
+func (c *ovmSafe) Run(input []byte) ([]byte, error) {
+
+    // collect the data locations in the input bytecode
+    var analysis bitvec = codeBitmap(input)
+
+    // TODO: we shouldn't need to iterate over every pc
+    for pc := uint64(0); pc < uint64(len(input)); pc++ {
+        // if we have an executable opcode (not push data)
+        if analysis.codeSegment(pc) {
+            // check that it's not in our banned opcodes
+            op := OpCode(input[pc])
+            _, banned := bannedOps[op]
+            if banned {
+                fmt.Printf("BANNED OPERATION. PC: %v, OP: %v\n", pc, op)
+                return math.U256Bytes(common.Big0), nil
+            }
+        }
+    }
+
+    return math.U256Bytes(common.Big1), nil
 }

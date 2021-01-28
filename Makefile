@@ -12,6 +12,9 @@ GOBIN = ./build/bin
 GO ?= latest
 GORUN = env GO111MODULE=on go run
 
+evm:
+	$(GORUN) build/ci.go install ./cmd/evm
+
 geth:
 	$(GORUN) build/ci.go install ./cmd/geth
 	@echo "Done building."
