@@ -17,6 +17,7 @@
 package vm
 
 import (
+    "bytes"
 	"crypto/sha256"
 	"encoding/binary"
 	"errors"
@@ -1028,17 +1029,24 @@ func (c *bls12381MapG2) Run(input []byte) ([]byte, error) {
 
 // --- OVM isByteCodeSafe precompile ---
 
-var bannedOps = set([]OpCode{
-    ADDRESS, BALANCE, BLOCKHASH,
-    CALL, CALLCODE, CHAINID, COINBASE,
-    CREATE, CREATE2, DELEGATECALL, DIFFICULTY,
-    EXTCODESIZE, EXTCODECOPY, EXTCODEHASH,
-    GASLIMIT, GASPRICE, NUMBER,
-    ORIGIN, REVERT, SELFBALANCE, SELFDESTRUCT,
-    SLOAD, SSTORE, STATICCALL, TIMESTAMP })
+var (
+    ABI_FALSE = math.U256Bytes(common.Big0)
+    ABI_TRUE = math.U256Bytes(common.Big1)
+)
 
 var haltingOps = set([]OpCode{
-    RETURN, REVERT, JUMP, STOP })
+    STOP, JUMP, RETURN, INVALID }) // (revert is banned)
+
+// Note that these magic call sequences can contain banned opcodes
+var callIdPrecompileSeq = ops2Bytes([]OpCode{
+   CALLER, POP, PUSH1, 0x00, PUSH1, 0x04, GAS, CALL })
+
+var callEMSeq = ops2Bytes([]OpCode{
+    CALLER, PUSH1, 0x00, SWAP1, GAS, CALL, PC, PUSH1, 0x0E, ADD, JUMPI,
+    RETURNDATASIZE, PUSH1, 0x00, DUP1, RETURNDATACOPY, RETURNDATASIZE, PUSH1,
+    0x00, REVERT, JUMPDEST, RETURNDATASIZE, PUSH1, 0x01, EQ, ISZERO, PC,
+    PUSH1, 0x0a, ADD, JUMPI, PUSH1, 0x01, PUSH1, 0x00, RETURN, JUMPDEST })
+
 
 type ovmSafe struct{}
 
@@ -1052,34 +1060,60 @@ func (c *ovmSafe) Run(input []byte) ([]byte, error) {
     var analysis bitvec = codeBitmap(input)
 
     reachable := true
-    for pc := uint64(0); pc < uint64(len(input)); pc++ {
+    for pc := uint64(0); pc < uint64(len(input)); {
         // if we have an executable opcode (not push data)
         if analysis.codeSegment(pc) {
             op := OpCode(input[pc])
 
             if reachable {
-                // check that it's not a banned opcode
-                _, banned := bannedOps[op]
-                if banned {
-                    // fmt.Printf("BANNED OPERATION. PC: %v, OP: %v\n", pc, op)
-                    // return an abi encoded "false"
-                    return math.U256Bytes(common.Big0), nil
+                // check that it's a valid ovm opcode
+                if ovmInstructionSet[op] == nil {
+                    return ABI_FALSE, nil
                 }
 
-                // if opcode stops execution or is invalid, the proceeding
-                // opcodes are unreachable until we hit a jumpdest
-                _, halting := haltingOps[op]
-                if halting || istanbulInstructionSet[op] == nil {
+                // if opcode stops execution, the proceeding opcodes are
+                // unreachable until we hit a jumpdest
+                if _, halting := haltingOps[op]; halting {
                     reachable = false
+                }
+
+                // we can only use CALLER in two magic sequences
+                if op == CALLER {
+
+                    if uint64(len(input)) < pc + 8 {
+                        return ABI_FALSE, nil
+                    }
+
+                    // if this is starts a call to the id precompile, the
+                    // entire code sequence is valid
+                    if bytes.Equal(input[pc:pc+8], callIdPrecompileSeq) {
+                        pc += 8
+                        continue
+                    }
+
+                    if uint64(len(input)) < pc + 37 {
+                        return ABI_FALSE, nil
+                    }
+
+                    // if this is starts a call to the ExecutionManager, the
+                    // entire code sequence is valid
+                    if bytes.Equal(input[pc:pc+37], callEMSeq) {
+                        pc += 37
+                        continue
+                    }
+
+                    // otherwise, CALLER is a banned operation
+                    return ABI_FALSE, nil
                 }
             } else if op == JUMPDEST {
                 reachable = true
             }
         }
+        pc++
     }
 
     // no invalid opcodes found. Return an abi encoded "true"
-    return math.U256Bytes(common.Big1), nil
+    return ABI_TRUE, nil
 }
 
 // helper function to make a fake set
@@ -1089,4 +1123,12 @@ func set(ops []OpCode) map[OpCode]bool {
         set[op] = true
     }
     return set
+}
+
+func ops2Bytes(ops []OpCode) []byte {
+    bytecode := []byte{}
+    for _, op := range ops {
+        bytecode = append(bytecode, byte(op))
+    }
+    return bytecode
 }

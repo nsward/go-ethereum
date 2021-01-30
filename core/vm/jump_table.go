@@ -17,6 +17,8 @@
 package vm
 
 import (
+	"math"
+
 	"github.com/ethereum/go-ethereum/params"
 )
 
@@ -57,10 +59,38 @@ var (
 	constantinopleInstructionSet   = newConstantinopleInstructionSet()
 	istanbulInstructionSet         = newIstanbulInstructionSet()
 	yoloV2InstructionSet           = newYoloV2InstructionSet()
+    ovmInstructionSet              = newOvmInstructionSet()
 )
 
 // JumpTable contains the EVM opcodes supported at a given fork.
 type JumpTable [256]*operation
+
+var ovmBannedOps = []OpCode{
+    ADDRESS, BALANCE, BLOCKHASH,
+    CALL, CALLCODE, CHAINID, COINBASE,
+    CREATE, CREATE2, DELEGATECALL, DIFFICULTY,
+    EXTCODESIZE, EXTCODECOPY, EXTCODEHASH,
+    GASLIMIT, GASPRICE, NUMBER,
+    ORIGIN, REVERT, SELFBALANCE, SELFDESTRUCT,
+    SLOAD, SSTORE, STATICCALL, TIMESTAMP }
+
+func removeOvmBanned(jt *JumpTable) {
+    for _, op := range ovmBannedOps {
+        jt[op] = nil
+    }
+}
+
+func newOvmInstructionSet() JumpTable {
+    instructionSet := newIstanbulInstructionSet()
+    removeOvmBanned(&instructionSet)
+    // we force ErrOutOfGas instead of ErrInvalidOpCode in case INVALID is executed
+    instructionSet[INVALID] = &operation{
+        constantGas: math.MaxUint64,
+        minStack: minStack(0, 0),
+        maxStack: maxStack(0, 0),
+    }
+    return instructionSet
+}
 
 // newYoloV2InstructionSet creates an instructionset containing
 // - "EIP-2315: Simple Subroutines"

@@ -219,6 +219,8 @@ const (
 	STATICCALL   OpCode = 0xfa
 	REVERT       OpCode = 0xfd
 	SELFDESTRUCT OpCode = 0xff
+
+    INVALID      OpCode = 0xfe
 )
 
 // Since the opcodes aren't all in order we can't use a regular slice.
@@ -388,6 +390,8 @@ var opCodeToString = map[OpCode]string{
 	REVERT:       "REVERT",
 	SELFDESTRUCT: "SELFDESTRUCT",
 
+    INVALID:    "INVALID",
+
 	PUSH: "PUSH",
 	DUP:  "DUP",
 	SWAP: "SWAP",
@@ -547,6 +551,8 @@ var stringToOp = map[string]OpCode{
 	"CALLCODE":       CALLCODE,
 	"REVERT":         REVERT,
 	"SELFDESTRUCT":   SELFDESTRUCT,
+
+    "INVALID":        INVALID,
 }
 
 // StringToOp finds the opcode whose name is stored in `str`.
